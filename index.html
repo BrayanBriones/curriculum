@@ -2,25 +2,26 @@
 <html lang="es">
 <head>
   <title>Currículum de Brayan Steven Briones Oleas</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="stylesheet/style.css">
 </head>
 <body>
-
   <header>
     <h1>Brayan Steven Briones Oleas</h1>
     
     <!-- Espacio para insertar una foto -->
-    <img src="ruta/a/la/foto.jpg" alt="Foto de Brayan Steven Briones Oleas">
+    <img id="imageBB" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4RT3oqqg401DOLcCeP73YUuqtflsxp99waA&s" alt="Foto de Brayan Steven Briones Oleas">
 
     <!-- Navegación principal -->
-    <nav>
-      <ul>
-        <li><a href="#resumen">Resumen</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#educacion">Educación</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="#referencias">Referencias</a></li>
+    <nav id="navbar">
+      <ul id="nav-list">
+        <li id="sum"><a href="#resumen">Resumen</a></li>
+        <li id="xp"><a href="#experiencia">Experiencia</a></li>
+        <li id="skills"><a href="#habilidades">Habilidades</a></li>
+        <li id="projects"><a href="#proyectos">Proyectos</a></li>
+        <li id="education"><a href="#educacion">Educación</a></li>
+        <li id="contact"><a href="#contacto">Contacto</a></li>
+        <li id="references"><a href="#referencias">Referencias</a></li>
       </ul>
     </nav>
   </header>
@@ -28,9 +29,9 @@
   <main>
 
     <section id="resumen">
-      <h2>Resumen</h2>
+      <h2 class="title">Resumen</h2>
       <p>[Aquí debe ir un resumen breve sobre la persona. Esta sección debe ser completada con información personal e intereses profesionales de Brayan Steven Briones Oleas.]</p>
-      <video controls>
+      <video id="presentation"controls>
         <source src="video.mp4" type="video/mp4">
         Tu navegador no soporta la etiqueta de video.
       </video>
@@ -38,13 +39,13 @@
     </section>
 
     <section id="experiencia">
-      <h2>Experiencia</h2>
+      <h2 class="title">Experiencia</h2>
       <p>[Aquí debe agregarse la experiencia laboral de Brayan, incluyendo cargos, empresas, fechas y descripciones de funciones.]</p>
     </section>
 
     <section id="habilidades">
-      <h2>Habilidades</h2>
-        <table style="border-collapse: collapse;">
+      <h2 class="title">Habilidades</h2>
+        <table id="skills_table"style="border-collapse: collapse;">
           <tr>
             <th></th>
             <th>Columna 1</th>
@@ -96,23 +97,23 @@
 
 
     <section id="contacto">
-      <h2>Contacto</h2>
+      <h2 class="title">Contacto</h2>
       <form>
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <input type="text" id="nombre" name="nombre" placeholder="Kevin Mejia" required>
 
         <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com"required>
 
         <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escriba el mensaje aqui"></textarea>
 
         <button type="submit">Enviar</button>
       </form>
 
-      <h3>Mi ubicación</h3>
+      <h3 class="title">Mi ubicación</h3>
         <!-- Mapa de Google Maps mostrando la ubicación de ESPOL -->
-        <iframe 
+        <iframe id="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.6610432917386!2d-79.96789813048001!3d-2.1449203321679465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d7d4b8718f1%3A0x5f4f9c8ccf59db39!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1716138426745!5m2!1ses!2sec" 
           width="100%" 
           height="300" 
