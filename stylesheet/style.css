@@ -3,55 +3,65 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html{
+  display:flex;
+  align-items: center;
+}
 /* Estilo general del cuerpo */
 body {
+  display: flex;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0 100px 0 400px;
   font-family: "Montserrat", Arial;
   background: linear-gradient(to top, #000000, #2e2d2d);
   color: #333;
-  padding: 2em;
 }
 
 /* Encabezado principal */
 header {
-  background-color: #1b1b1b;
-  padding: 1em;
-  text-align: center;
+    left: 0;
+    position: fixed;
+    background-color: #1b1b1b;
+    min-width: 260px;
+    max-width: 340px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    padding: 1vh 0px;
+    margin: 2em;
 }
 h1 {
   color: #f1f1f1;
-  font-size: 1.5em;
-  margin-bottom: 10px;
+  font-size: clamp(10px, 5vw, 24px);
+  margin: 25px 0;
 }
 
 #imageBB {
-  max-width: 100px;
-  height: 90px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
-  margin-top: 10px;
-  
 }
 
 /* Navegación */
 #navbar{
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  width: 90%;
-  background-color: #34495e;
-  margin-top: 20px;
+  width: auto;
+  padding: 0;
 }
 
 #nav-list {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 #nav-list li {
-  margin: 8px;
+  margin: 20px;
 }
 
 #nav-list li a {
