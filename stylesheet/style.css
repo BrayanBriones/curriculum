@@ -23,51 +23,56 @@ header {
     left: 0;
     position: fixed;
     background-color: #1b1b1b;
-    min-width: 260px;
-    max-width: 340px;
+    min-width: clamp(220px, 25vw, 340px);
     height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
     align-items: center;
-    padding: 1vh 0px;
-    margin: 2em;
+    padding: clamp(1vh, 2vh, 3vh) 0;
+    margin: clamp(1em, 3vw, 2em);
+    border-radius: clamp(20px, 4vw, 40px);
 }
 h1 {
   color: #f1f1f1;
-  font-size: clamp(10px, 5vw, 24px);
-  margin: 25px 0;
+  font-size: clamp(16px, 4vw, 24px);
+  margin: clamp(10px, 3vh, 25px) 0;
 }
 
 #imageBB {
-  width: 150px;
-  height: 150px;
+  width: clamp(80px, 15vw, 150px);
+  height: clamp(80px, 15vw, 150px);
   object-fit: cover;
   border-radius: 50%;
 }
 
 /* Navegación */
-#navbar{
-  width: auto;
+#navbar {
+  width: 100%;
   padding: 0;
 }
 
+
 #nav-list {
+  display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 0;
+  gap: clamp(10px, 2vh, 20px);
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 #nav-list li {
-  margin: 20px;
+  margin: clamp(2vh, 5vh, 20vh) 0;
 }
 
 #nav-list li a {
+  font-size: clamp(14px, 2vw, 20px);
   color: #f1f1f1;
   text-decoration: none;
-  padding: 8px 10px;
+  padding: clamp(5px, 1vh, 10px) clamp(8px, 2vw, 16px);
   border-radius: 10px;
   transition: background-color 0.3s;
 }
